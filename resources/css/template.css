@@ -161,6 +161,11 @@ h1 {
   border-radius: 50%;
 }
 
+.chip .chip-value:hover{
+  cursor: pointer;
+  color:#7b7b7b;
+}
+
 @media screen and (max-width: 900px) {
   [class^="col-"] {
     width: 50%;
