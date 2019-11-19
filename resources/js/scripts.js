@@ -57,5 +57,5 @@ function copyToClipboard(value) {
   el.select();
   document.execCommand('copy');
   document.body.removeChild(el);
-  snackbar('Copiado para a área de transferência!');
+  toast('Copiado para a área de transferência!');
 };
