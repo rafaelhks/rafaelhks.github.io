@@ -28,10 +28,10 @@ function remove(id) {
 }	
 
 function alert(title, message) {
-	var alert = document.createElement('div');
-	alert.id = 'rl_alert';
-	alert.innerHTML = '<div class="fade show"><div class="rl-alert"><span class="rl-alert-header">'+title+'</span><span class="rl-alert-content">'+message+'</span><div class="rl-alert-footer"><span onclick="remove(\'rl_alert\');" class="rl-alert-option">OK</span></div></div></div>';
-	document.body.appendChild(alert);
+  var alert = document.createElement('div');
+  alert.id = 'rl_alert';
+  alert.innerHTML = '<div class="fade show"><div class="rl-alert"><span class="rl-alert-header">'+title+'</span><span class="rl-alert-content">'+message+'</span><div class="rl-alert-footer"><span onclick="remove(\'rl_alert\');" class="rl-alert-option">OK</span></div></div></div>';
+  document.body.appendChild(alert);
 }
 
 function toggleMenu() {
@@ -46,3 +46,16 @@ function toggleMenu() {
     bt.innerHTML = "close";
   }
 }
+
+function copyToClipboard(value) {
+  const el = document.createElement('textarea');
+  el.value = value;
+  el.setAttribute('readonly', '');
+  el.style.position = 'absolute';
+  el.style.left = '-9999px';
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+  snackbar('Copiado para a área de transferência!');
+};
