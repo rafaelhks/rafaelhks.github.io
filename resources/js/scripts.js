@@ -35,15 +35,13 @@ function alert(title, message) {
 }
 
 function toggleMenu() {
-  var element = document.getElementById('sidenav');
-  var bt = document.getElementById('menu-icon');
-  var display = element.style.display;
-  if(display=="unset"){
-    element.style.display = "none";
-    bt.innerHTML = "menu";
+  var element = document.getElementById('id_Sidenav');
+  var width = element.style.width;
+  console.log( 'Widtgh:'+width)
+  if(width=="250px"){
+    element.style.width = "0";
   }else{
-    element.style.display = "unset";
-    bt.innerHTML = "close";
+    element.style.width = "250px";
   }
 }
 

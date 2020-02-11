@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio - Rafael F. Ferreira</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/image/favicon/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
     <link rel="stylesheet" type="text/css" href="resources/css/template.css">
@@ -10,26 +13,42 @@
 </head>
 <body>
   <div class="main">
-    <div class="hero-image">
-      <div class="hero-text">
+      <div class="header-container">
         <h1>Rafael F. Ferreira</h1>
-        <p>Cientista da Computação</p>
       </div>
-      <div class="hero-options">
-        <a href="https://www.linkedin.com/in/rafael-f-ferreira/" class="fa fa-linkedin" title="LinkedIn"></a>
-        <a href="http://www.github.com/rafaelhks/" class="fa fa-github" title="Github"></a>
-      </div>
-    </div> 
+
+    <span class="sidenav-toggle" onclick="toggleMenu();"><i class="fa fa-bars"></i></span>
+
+    <div id="id_Sidenav" class="sidenav">
+      <img src="resources/image/logo-only.png" width="inherit"/>
+      <a href="#about" title="Sobre">Sobre</a>
+      <a href="#contact" title="Contato">Contato</a>
+      <a href="#social" title="Social">Social</a>
+    </div>
     
     <div class="content">
       <div class="row">
-        <div class="col-6">
-          <div class="card">
-            <span class="card-title">Sobre mim</span>
-            <span class="card-content">Graduado em Ciência da Computação pela Universidade Estadual do Paraná e Técnico em Hardware pela Microlins, hoje atuo como desenvolvedor Java Full-Stack, focado em ambientes Mobile e Web.</span>
+        <section id="about">
+          <div class="col-12">
+            <div class="card">
+              <span class="card-title">Sobre mim</span>
+              <span class="card-content">
+                Formação:
+                <ul>
+                  <li>Graduado em Ciência da Computação pela Universidade Estadual do Paraná (2015 - 2018);</li>
+                  <li>Técnico em Hardware pela Microlins (2013-2013).</li>
+                </ul>
+                Carreira:
+                <ul>
+                  <li>Desenvolvedor Web e Mobile - RL Software (Fev/2019 - Dez-2019); </li>
+                  <li>Gerente de Desenvolvimento Web e Mobile  - RL Software (Cargo atual). </li>
+                </ul>
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="col-6">
+        </section>
+        <section id="contact">
+          <div class="col-12">
             <div class="card">
               <span class="card-title">Contato</span>
               <span class="card-content" style="text-align:center">
@@ -37,11 +56,45 @@
                   <div class="chip-icon">
                     <i class="fa fa-envelope"></i>
                   </div>
+                  <span class="chip-value" onclick="copyToClipboard(this.innerHTML);">rafaelfrancisco_97@hotmail.com</span>
+                </div> 
+                <div class="chip">
+                  <div class="chip-icon">
+                    <i class="fa fa-envelope"></i>
+                  </div>
                   <span class="chip-value" onclick="copyToClipboard(this.innerHTML);">rafael.ferreira@rlsistemas.com.br</span>
+                </div> 
+                <div class="chip">
+                  <div class="chip-icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <span class="chip-value" onclick="copyToClipboard(this.innerHTML);">+55 43 99977-5355</span>
                 </div> 
               </span>
             </div>
           </div>
+        </section>
+        <section id="social">
+          <div class="col-12">
+            <div class="card">
+              <span class="card-title">Social</span>
+              <span class="card-content" style="text-align:center">
+                <div class="chip">
+                  <div class="chip-icon">
+                    <i class="fa fa-linkedin"></i>
+                  </div>
+                  <span class="chip-value" onclick="location.href = 'https://www.linkedin.com/in/rafael-f-ferreira/';">LinkedIn</span>
+                </div> 
+                <div class="chip">
+                  <div class="chip-icon">
+                    <i class="fa fa-github"></i>
+                  </div>
+                  <span class="chip-value" onclick="location.href = 'http://www.github.com/rafaelhks/';">Github</span>
+                </div>   
+              </span>
+            </div>
+          </div>
+        </section>
       </div> 
     </div>
   </div>

@@ -102,26 +102,6 @@ body {
   color: #f7f7f7;
 }
 
-#sidenav {
-  background: #626262;
-  width: 200px;
-  height: 100%;
-  position: fixed;
-  display: none;
-}
-
-#sidenav a {
-  display: inherit;
-  position: relative;
-  display: block;
-  padding: 15px;
-  color: white;
-}
-
-#sidenav a:hover{
-  background: rgb(5, 54, 127);
-  cursor: pointer;
-}
 
 @-webkit-keyframes fadein {
   from {opacity: 0;}
