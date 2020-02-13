@@ -36,13 +36,20 @@ function alert(title, message) {
 
 function toggleMenu() {
   var element = document.getElementById('id_Sidenav');
-  var width = element.style.width;
-  console.log( 'Widtgh:'+width)
-  if(width=="250px"){
-    element.style.width = "0";
+  var el_cur_class = element.className;
+
+  console.log('claas: '+el_cur_class);
+  
+  if(el_cur_class==="sidenav"){
+    element.className = "sidenav sidenav-collapsed";
   }else{
-    element.style.width = "250px";
+    element.className = "sidenav";
   }
+}
+
+function closeMenu(){
+  var element = document.getElementById('id_Sidenav');
+  element.className = "sidenav sidenav-collapsed";
 }
 
 function copyToClipboard(value) {

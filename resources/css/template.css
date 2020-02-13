@@ -7,10 +7,6 @@ body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-.main {
-  width: 100%;
-}
-
 h1 {
   font-size: 2.5em;
   word-break: break-all;
@@ -149,16 +145,19 @@ h1 {
 
 .content {
   padding: 5px;
+  margin-top: 50px;
+  margin-left: 45px;
 }
 
 .chip {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 15px;
   height: 50px;
-  font-size: 16px;
+  font-size: 0.9em;
   line-height: 50px;
   border-radius: 25px;
   background-color: #f1f1f1;
+  margin: 5px;
 }
 
 .chip .chip-icon {
@@ -174,22 +173,80 @@ h1 {
   color:#7b7b7b;
 }
 
+.appbar {
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 4px #ccc;
+  height: 50px;
+  top: 0;
+  left:0;
+  right:0;
+  z-index: 2;
+  position: fixed;
+}
+
+.appbar a {
+  float: left;
+  color: #4f4f4f;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 1.1em;
+  display:inline-block;
+  height:100%;
+}
+
+.appbar a:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.appbar a.active {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.appbar a i{
+  color: #4f4f4f;
+}
+
+.appbar .title {
+  color: #4f4f4f;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.4em;
+}
+
+.main{
+  width: 100%;
+  margin-top: 50px;
+}
+
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #F0F0F0;
   overflow-x: hidden;
-  padding-top: 45px;
-  transition: 0.5s;
-  box-shadow: -36px -1px 46px black;
+  margin-top: 50px;
+  transition: 0.3s;
+  box-shadow: 0 2px 7px #ccc;
+}
+
+.sidenav-collapsed {
+  width: 45px;
+  background-color: #FFF;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 10px 10px 10px 0px;
   text-decoration: none;
   font-size: 18px;
   color: #4f4f4f;
@@ -198,7 +255,23 @@ h1 {
 }
 
 .sidenav a:hover {
-  color: #383838;
+  color: #848484;
+  background: #f7f7f7;
+}
+
+.sidenav a i {
+    width: 45px;
+    text-align: center;
+}
+
+.sidenav-collapsed a .text {
+  display: none;
+  animation: fadeout 0.5s;
+}
+
+.sidenav a .text {
+  -webkit-animation: fadein 0.5s;
+  animation: fadein 0.5s;
 }
 
 .sidenav img {
@@ -206,27 +279,14 @@ h1 {
   padding-inline: 60px;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.sidenav-toggle {
-  position: fixed;
-  top: 0;
-  left: 5px;
-  padding: 5px;
-  color: #2b2b2b;
-  font-size: 26px;
-  z-index: 10;
-}
-
-.sidenav-toggle:hover{
-  cursor: pointer;
-  opacity: 0.8;
+.footer {
+  width: 100%;
+  position: static;
+  bottom: 0;
+  text-align: center;
+  color:#9b9a9a;
+  margin-top: 10px;
+  font-size: 0.8em;
 }
 
 #main {
@@ -240,7 +300,20 @@ h1 {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  .sidenav-collapsed{
+    width: 0;
+  }
+
+  .content {
+    margin-left: 0px;
+  }
+
+  .card .card-content{
+    padding: 0px 20px 15px 20px;
+    font-size: 0.9em;
+  }
+
   [class^="col-"] {
     width: 100%;
   }

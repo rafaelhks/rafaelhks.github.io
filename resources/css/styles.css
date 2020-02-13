@@ -12,7 +12,6 @@ body {
 #toast {
   visibility: hidden; 
   min-width: 250px;
-  margin-left: -125px;
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -21,6 +20,7 @@ body {
   position: fixed;
   z-index: 1;
   left: 50%;
+  transform: translateX(-50%);
   bottom: 30px;
 }
 
@@ -77,24 +77,6 @@ body {
   animation: fadein 0.5s;
 }
 
-.topnav {
-  background-color: #4d4d4d;
-  overflow: hidden;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #626262;
-  cursor: pointer;
-}
 
 .head-name{
   float: left;
@@ -123,55 +105,6 @@ body {
   to {opacity: 0;}
 }
 
-/* RL ALERT */
-.rl-alert {
-  background-color: #fefefe;
-  margin: 15% auto;
-  border: none;
-  width: 400px;
-  max-width: 80%;
-  text-align: center;
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.rl-alert .rl-alert-header {
-	display: block;
-	text-align: left;
-	font-size: 1.2em;
-	font-weight: 600;
-	border-bottom: 1px solid #ccc;
-	padding: 5px;
-	padding-inline: 10px;
-}
-
-.rl-alert .rl-alert-content {
-	display: block;
-	padding: 10px;
-	text-align:center;
-}
-
-.rl-alert .rl-alert-footer {
-	display: inherit;
-	padding-inline: 10px;
-	border-radius: inherit;
-  padding-block: 5px;
-  border-top: 1px solid #ccc;
-  text-align: right;
-}
-
-.rl-alert .rl-alert-footer .rl-alert-option {
-	border-radius: inherit;
-	font-size: 16px;
-	font-weight: 600;
-}
-
-.rl-alert .rl-alert-footer .rl-alert-option:hover{
-  cursor: pointer;
-  color: #2752cf;
-}
-
 .show{
 	visibility: visible !important;
 }
@@ -187,10 +120,6 @@ body {
   right: 0;
   bottom: 0;
   z-index: 1500;
-}
-
-.rl-alert .rl-alert-footer button {
-  background: inherit;
 }
 
 .loader {

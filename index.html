@@ -13,25 +13,22 @@
 </head>
 <body>
   <div class="main">
-      <div class="header-container">
-        <h1>Rafael F. Ferreira</h1>
-      </div>
-
-    <span class="sidenav-toggle" onclick="toggleMenu();"><i class="fa fa-bars"></i></span>
-
-    <div id="id_Sidenav" class="sidenav">
-      <img src="resources/image/logo-only.png" width="inherit"/>
-      <a href="#about" title="Sobre">Sobre</a>
-      <a href="#contact" title="Contato">Contato</a>
-      <a href="#social" title="Social">Social</a>
+    <div class="appbar">
+      <a class="active" href="#home" onclick="toggleMenu();"><i class="fa fa-bars"></i></a>
+      <span class="title">Rafael F. Ferreira</span>
     </div>
-    
+    <div id="id_Sidenav" class="sidenav sidenav-collapsed">
+      <a href="#about" title="Sobre" onclick="closeMenu();"><i class="fa fa-info-circle"></i><span class="text">Sobre<span></a>
+      <a href="#contact" title="Contato" onclick="closeMenu();"><i class="fa fa-phone"></i><span class="text">Contato<span></a>
+      <a href="#social" title="Social" onclick="closeMenu();"><i class="fa fa-id-badge"></i><span class="text">Social<span></a>
+    </div>
+
     <div class="content">
       <div class="row">
         <section id="about">
           <div class="col-12">
             <div class="card">
-              <span class="card-title">Sobre mim</span>
+              <span class="card-title">Sobre</span>
               <span class="card-content">
                 Formação:
                 <ul>
@@ -96,6 +93,10 @@
           </div>
         </section>
       </div> 
+      
+    </div>
+    <div class="footer">
+      Copyright © 2020 Rafael Francisco Ferreira
     </div>
   </div>
 </body>
