@@ -168,6 +168,12 @@ h1 {
   border-radius: 50%;
 }
 
+.chip .chip-value {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .chip .chip-value:hover{
   cursor: pointer;
   color:#7b7b7b;
@@ -294,12 +300,6 @@ h1 {
   padding: 20px;
 }
 
-@media screen and (max-width: 900px) {
-  [class^="col-"] {
-    width: 50%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .sidenav-collapsed{
     width: 0;
@@ -307,6 +307,10 @@ h1 {
 
   .content {
     margin-left: 0px;
+  }
+
+  .appbar .title {
+    font-size: 1.1em;
   }
 
   .card .card-content{
