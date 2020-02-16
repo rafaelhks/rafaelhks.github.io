@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #1f1f1f;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -45,7 +45,7 @@ h1 {
 }
 
 .card {
-  background-color: white;
+  background-color: #282828;
   margin: 3px;
   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -63,7 +63,7 @@ h1 {
   padding: 15px;
   font-size: 22px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #fff;
 }
 
 .card .card-content{
@@ -71,20 +71,20 @@ h1 {
   width: 100%;
   text-align: justify;
   padding: 0px 35px 35px 35px;
-  color: #393939;
+  color: #dfe4e4;
 }
 
 .know-more {
   text-align: right;
   display: block;
   text-decoration: none;
-  color:#4f4f4f;
+  color:#fff;
   font-size: 14px;
 }
 
 .know-more:hover{
   cursor: pointer;
-  color: #2b2b2b;
+  color: #f7f7f7;
 }
 
 .header-container{
@@ -156,7 +156,7 @@ h1 {
   font-size: 0.9em;
   line-height: 50px;
   border-radius: 25px;
-  background-color: #f1f1f1;
+  background-color: #363636;
   margin: 5px;
 }
 
@@ -181,8 +181,8 @@ h1 {
 
 .appbar {
   overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 2px 4px #ccc;
+  background-color: #282828;
+  box-shadow: 0 1px 6px #171717;
   height: 50px;
   top: 0;
   left:0;
@@ -193,7 +193,7 @@ h1 {
 
 .appbar a {
   float: left;
-  color: #4f4f4f;
+  color: #dbdbdb;
   text-align: center;
   padding: 15px 15px;
   text-decoration: none;
@@ -202,22 +202,22 @@ h1 {
   height:100%;
 }
 
-.appbar a:hover {
-  background-color: #ddd;
+.appbar a:hover, .appbar a:focus {
+  background-color: #414141;
   cursor: pointer;
 }
 
-.appbar a.active {
-  background-color: #f0f0f0;
+/* .appbar a.active {
+  background-color: #414141;
   color: black;
-}
+} */
 
 .appbar a i{
-  color: #4f4f4f;
+  color: #fff;
 }
 
 .appbar .title {
-  color: #4f4f4f;
+  color: #fff;
   display: block;
   position: absolute;
   top: 50%;
@@ -239,30 +239,30 @@ h1 {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #F0F0F0;
+  background-color: #282828;
   overflow-x: hidden;
   margin-top: 50px;
   transition: 0.3s;
-  box-shadow: 0 2px 7px #ccc;
+  box-shadow: 0 1px 6px #171717;
 }
 
 .sidenav-collapsed {
   width: 45px;
-  background-color: #FFF;
+  background-color: #282828;
 }
 
 .sidenav a {
   padding: 10px 10px 10px 0px;
   text-decoration: none;
   font-size: 18px;
-  color: #4f4f4f;
+  color: #fff;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #848484;
-  background: #f7f7f7;
+  color: #f7f7f7;
+  background: #3b3b3b;
 }
 
 .sidenav a i {
@@ -291,7 +291,7 @@ h1 {
   bottom: 0;
   text-align: center;
   color:#9b9a9a;
-  margin-top: 10px;
+  margin: 5px;
   font-size: 0.8em;
 }
 
@@ -316,6 +316,12 @@ h1 {
   .card .card-content{
     padding: 0px 20px 15px 20px;
     font-size: 0.9em;
+  }
+
+  .card .card-content ul{
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   [class^="col-"] {
