@@ -48,6 +48,7 @@ h1 {
   background-color: #282828;
   margin: 3px;
   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #555;
 }
 
 .card img{
@@ -63,7 +64,7 @@ h1 {
   padding: 15px;
   font-size: 22px;
   font-weight: 600;
-  color: #fff;
+  color: #35aebb;
 }
 
 .card .card-content{
@@ -285,14 +286,14 @@ h1 {
   padding-inline: 60px;
 }
 
-.footer {
-  width: 100%;
+footer {
   position: static;
-  bottom: 0;
+  bottom: 5px;
   text-align: center;
   color:#9b9a9a;
   margin: 5px;
   font-size: 0.8em;
+  left: 50%;
 }
 
 #main {
