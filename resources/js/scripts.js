@@ -1,3 +1,5 @@
+window.onscroll = function() {scrollFunction()};
+
 function toast(message, time) {
   var toast = document.createElement('div');
   toast.id = 'toast';
@@ -64,3 +66,17 @@ function copyToClipboard(value) {
   document.body.removeChild(el);
   toast('Copiado para a área de transferência!');
 };
+
+function scrollFunction() {
+  var btnTop = document.getElementById("btnTop");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btnTop.style.display = "block";
+  } else {
+    btnTop.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // Safari
+  document.documentElement.scrollTop = 0; // Chrome, Firefox, IE and Opera
+} 
