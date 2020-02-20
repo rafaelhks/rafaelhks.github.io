@@ -237,14 +237,14 @@ h1 {
   height: 100%;
   width: 250px;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: #282828;
   overflow-x: hidden;
   margin-top: 50px;
   transition: 0.3s;
-  box-shadow: 0 1px 6px #171717;
+  box-shadow: 0px 5px 4px 2px #171717;
 }
 
 .sidenav-collapsed {
@@ -281,9 +281,35 @@ h1 {
   animation: fadein 0.5s;
 }
 
-.sidenav img {
+.sidenav .profile{
   width: inherit;
-  padding-inline: 60px;
+  text-align: center;
+  background-color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav .profile img {
+  max-width: 200px;
+  padding: 10px 40px 10px 40px;
+  border-radius: 50%;
+}
+
+.sidenav .profile p {
+  color:#a9a9a9;
+  font-size: 1em;
+  margin: 0;
+  padding: 0px 5px 10px 4px;
+}
+
+.sidenav-collapsed .profile p{
+  display: none;
+}
+
+.sidenav-collapsed .profile img {
+  width: inherit;
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.4s;
 }
 
 footer {
