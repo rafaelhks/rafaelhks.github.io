@@ -1,82 +1,35 @@
-window.onscroll = function() {scrollFunction()};
-
 function toast(message, time) {
-  var toast = document.createElement('div');
-  toast.id = 'toast';
-  toast.className = 'show';
-  toast.innerHTML = message;
-  document.body.appendChild(toast);
-
-  setTimeout(function(){ 
-	document.body.removeChild(toast); 
-  }, time != null ? time : 3000);
-} 
-
-function snackbar(message, time) {
-  var snackbar = document.createElement('div');
-  snackbar.id = 'snackbar';
-  snackbar.className = 'show';
-  snackbar.innerHTML = message;
-  document.body.appendChild(snackbar);	
-
-  setTimeout(function(){ 
-	document.body.removeChild(snackbar); 
-  }, time != null ? time : 3000);
-} 
-
-function remove(id) {
-  var element = document.getElementById(id);
-  document.body.removeChild(element); 
-}	
-
-function alert(title, message) {
-  var alert = document.createElement('div');
-  alert.id = 'rl_alert';
-  alert.innerHTML = '<div class="fade show"><div class="rl-alert"><span class="rl-alert-header">'+title+'</span><span class="rl-alert-content">'+message+'</span><div class="rl-alert-footer"><span onclick="remove(\'rl_alert\');" class="rl-alert-option">OK</span></div></div></div>';
-  document.body.appendChild(alert);
-}
-
-function toggleMenu() {
-  var element = document.getElementById('id_Sidenav');
-  var el_cur_class = element.className;
-
-  console.log('claas: '+el_cur_class);
+    var toast = document.createElement('div');
+    toast.id = 'toast';
+    toast.className = 'show';
+    toast.innerHTML = message;
+    document.body.appendChild(toast);
   
-  if(el_cur_class==="sidenav"){
-    element.className = "sidenav sidenav-collapsed";
-  }else{
-    element.className = "sidenav";
-  }
+    setTimeout(function(){ 
+      document.body.removeChild(toast); 
+    }, time != null ? time : 3000);
+  } 
+
+function readMoL(btnMore, dotsId, moreId) {
+    var dots = document.getElementById(dotsId);
+    var moreText = document.getElementById(moreId);
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnMore.innerHTML = "Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnMore.innerHTML = "Read less";
+        moreText.style.display = "inline";
+    }
 }
 
-function closeMenu(){
-  var element = document.getElementById('id_Sidenav');
-  element.className = "sidenav sidenav-collapsed";
+function callMail(){
+    try {
+        toast("Abrindo seu gerenciador de email...");
+        window.location.href = "mailto:rafaelfrancisco_97@hotmail.com?subject=Assunto&body=Escreva%20uma%20mensagem%20aqui";
+    } catch (error) {
+        toast("Erro: "+error.message);
+    }
 }
-
-function copyToClipboard(value) {
-  const el = document.createElement('textarea');
-  el.value = value;
-  el.setAttribute('readonly', '');
-  el.style.position = 'absolute';
-  el.style.left = '-9999px';
-  document.body.appendChild(el);
-  el.select();
-  document.execCommand('copy');
-  document.body.removeChild(el);
-  toast('Copiado para a área de transferência!');
-};
-
-function scrollFunction() {
-  var btnTop = document.getElementById("btnTop");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    btnTop.style.display = "block";
-  } else {
-    btnTop.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0; // Safari
-  document.documentElement.scrollTop = 0; // Chrome, Firefox, IE and Opera
-} 

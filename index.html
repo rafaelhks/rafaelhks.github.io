@@ -1,107 +1,86 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolio - Rafael F. Ferreira</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="resources/image/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="resources/image/favicon/favicon-16x16.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/template.css">
-    <script src="resources/js/scripts.js"></script> 
-</head>
-<body>
-  <div class="main">
-    <div class="appbar">
-      <a class="active" href="#" onclick="toggleMenu();"><i class="fa fa-bars"></i></a>
-      <span class="title">Rafael F. Ferreira</span>
-    </div>
-    <div id="id_Sidenav" class="sidenav sidenav-collapsed">
-      <div class="profile">
-        <img src="resources/image/profile.jpeg" />
-        <p>Cientista da Computação</p>
-      </div>
-      <a href="#about" title="Sobre" onclick="closeMenu();"><i class="fa fa-info-circle"></i><span class="text">Sobre<span></a>
-      <a href="#contact" title="Contato" onclick="closeMenu();"><i class="fa fa-phone"></i><span class="text">Contato<span></a>
-      <a href="#social" title="Social" onclick="closeMenu();"><i class="fa fa-id-badge"></i><span class="text">Social<span></a>
-    </div>
-    <button onclick="topFunction()" id="btnTop" title="Go to top"><i class="fa fa-arrow-up"></i></button> 
 
-    <div class="content">
-      <div class="row">
-        <section id="about">
-          <div class="col-6">
-            <div class="card">
-              <span class="card-title">Sobre</span>
-              <span class="card-content">
-                Formação:
-                <ul>
-                  <li>Graduado em Ciência da Computação pela Universidade Estadual do Paraná (2015 - 2018);</li>
-                  <li>Técnico em Hardware pela Microlins (2013 - 2013).</li>
-                </ul>
-                Carreira:
-                <ul>
-                  <li>Desenvolvedor Web e Mobile - RL Software (Fev/2019 - Dez/2019); </li>
-                  <li>Gerente de Desenvolvimento Web e Mobile  - RL Software (Jan/2020 - Atualmente). </li>
-                </ul>
-              </span>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Portifolio - Rafael F. Ferreira</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="resources/css/styles.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container">
+        <div class="row">
+            <div class="column-66">
+                <h1 class="large-font"><b>Rafael F. Ferreira</b></h1>
+                <h1 class="notthatlarge-font" style="color:MediumSeaGreen;"><b>Cientista da Computação</b></h1>
+                <p>Se a tecnologia dominará o mundo, temos o dever de dominar a tecnologia.</p>
+                <a href="http://github.com/rafaelhks" class="social-icon"><i class="fa fa-github"></i></a>
+                <a href="http://linkedin.com/rafael-f-ferreira" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                <a href="#" onclick="callMail();" class="social-icon"><i class="fa fa-envelope"></i></a>
             </div>
-          </div>
-        </section>
-        <section id="contact">
-          <div class="col-6">
-            <div class="card">
-              <span class="card-title">Contato</span>
-              <span class="card-content" style="text-align:center">
-                <div class="chip">
-                  <div class="chip-icon">
-                    <i class="fa fa-envelope"></i>
-                  </div>
-                  <div class="chip-value" onclick="copyToClipboard(this.innerHTML);">rafaelfrancisco_97@hotmail.com</div>
-                </div> 
-                <div class="chip">
-                  <div class="chip-icon">
-                    <i class="fa fa-envelope"></i>
-                  </div>
-                  <div class="chip-value" onclick="copyToClipboard(this.innerHTML);">rafael.ferreira@rlsistemas.com.br</div>
-                </div> 
-                <div class="chip">
-                  <div class="chip-icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <div class="chip-value" onclick="copyToClipboard(this.innerHTML);">+55 43 99977-5355</div>
-                </div> 
-              </span>
+            <div class="column-33">
+                <img src="resources/img/profile.jpeg" width="335" height="471" style="border-radius: 50%;">
             </div>
-          </div>
-        </section>
-        <section id="social">
-          <div class="col-6">
-            <div class="card">
-              <span class="card-title">Social</span>
-              <span class="card-content" style="text-align:center">
-                <div class="chip">
-                  <div class="chip-icon">
-                    <i class="fa fa-linkedin"></i>
-                  </div>
-                  <div class="chip-value" onclick="location.href = 'https://www.linkedin.com/in/rafael-f-ferreira/';">LinkedIn</div>
-                </div> 
-                <div class="chip">
-                  <div class="chip-icon">
-                    <i class="fa fa-github"></i>
-                  </div>
-                  <div class="chip-value" onclick="location.href = 'http://www.github.com/rafaelhks/';">Github</div>
-                </div>   
-              </span>
-            </div>
-          </div>
-        </section>
-      </div> 
+        </div>
     </div>
-  </div>
-  <!-- <footer>
-    Copyright © 2020 Rafael Francisco Ferreira
-  </footer> -->
+
+    <!-- Sobre Section -->
+    <div class="container" style="background-color:#f1f1f1">
+        <div class="row">
+            <div class="column-33">
+                <img src="resources/img/about_dummy.png" alt="App" width="335" height="471" style="border-radius: 50%;">
+            </div>
+            <div class="column-66">
+                <h1 class="xlarge-font"><b>Sobre</b></h1>
+                <h1 class="notthatlarge-font" style="color:red;"><b>Tecnologia == Paixão</b></h1>
+                <div class="content-text">
+                    <p>Olá, me chamo Rafael. Desde cedo aficcionado por tecnologia, decidi me tornar um Cientista da
+                        Computação, com o intuito de encontrar e desenvolver soluções que tornem nossa vida mais prática
+                        e divertida com o poder das tecnologias fornecidas pelos diversos ramos da computação.<br />
+                        Em dezembro de 2018 obtive oficialmente o Bacharel em Ciência da Computação, após 4 anos na
+                        Unversidade Estadual do Paraná. Durante este tempo pude me aprofundar em diversas áreas, se
+                        destacando em Processamento de Imagens, Computação Gráfica, IA e Sistemas Microcontrolados.
+                        Também pude ter contato com diversas tencologias, como C, C++, C#, Java, Prolog, Python e Go,
+                        tendo como foco o C++ e o Java, linguagem que possuo maior domínio.
+                    </p>
+                </div>
+                <button class="button" style="background-color:red">Ler mais</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carreira -->
+    <div class="container">
+        <div class="row">
+            <div class="column-66">
+                <h1 class="xlarge-font"><b>Carreira</b></h1>
+                <h1 class="large-font" style="color:#19b6f1;"><b>RL Software</b></h1>
+                <div class="content-text">
+                    <p>Em fevereiro de 2019 comecei minha carreira como desenvolvedor Web e Mobile na RL Software.
+                        <br />Por dominar a linguagem Java, usada tanto nos sistemas Web (JSF/Spring) quanto nos Mobile
+                        (Android nativo), me adaptei facilmente aos projetos já existentes na empresa, que envolviam
+                        aplicativos de vendas e emissão de notas e sistemas web de compra/venda online e Business
+                        Intelligence.<br /> Após alguns meses comecei a desenvolver novos sistemas para a empresa, como
+                        seu emissor de notas web e seus aplicativos voltados a gestão de entregas, coletas, verificação
+                        de share e expedição de mercadorias. Em Janeiro de 2020, comecei a desenvolver seu novo Portal,
+                        desta vez trazendo novas tecnologias para a empresa: React e Node.js. Visto que estas
+                        tecnologias vinham crescendo bastante e oferecem uma performance e produtividade maiores que as
+                        já usadas, logo foram aceitas e atenderam bem os requisitos. <br />Ainda em Janeiro de 2020, me
+                        tornei o Gerente do desenvolvimento Web e Mobile, cargo que ocupo atualmente.</p>
+                </div>
+                <button class="button" style="background-color: #19b6f1;"
+                    onclick="window.open('http://www.rlsistemas.com.br/');">Saiba mais sobre a RL Software</button>
+            </div>
+            <div class="column-33">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="resources/js/scripts.js"></script>
 </body>
+
 </html>
