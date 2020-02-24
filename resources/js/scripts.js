@@ -1,3 +1,8 @@
+window.onscroll = function() {stickNavbar()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
 function toast(message, time) {
     var toast = document.createElement('div');
     toast.id = 'toast';
@@ -33,3 +38,11 @@ function callMail(){
         toast("Erro: "+error.message);
     }
 }
+
+function stickNavbar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 

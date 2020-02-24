@@ -125,6 +125,39 @@ footer{
     color:dimgray;
 }
 
+#navbar {
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+}
+
+#navbar a {
+    /* float: left; */
+    /* display: block; */
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0px 4px -1px #555;
+}
+  
+
+.sticky + .container {
+    padding-top: 60px;
+}
+
 @media screen and (max-width: 1000px) {
     [class^="col-"] {
         width: 100%;
