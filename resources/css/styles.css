@@ -7,8 +7,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    color: #2a7ec8;
+}
+
 .container {
     padding: 64px;
+}
+
+.container .container-title{
+    padding: 20px 0 0 20px;
+    margin: 0;
 }
 
 .container .content-text {
@@ -21,15 +30,21 @@ body {
     clear: both
 }
 
-.column-66 {
-    float: left;
-    width: 66.66666%;
-    padding: 20px;
-}
+.col-1{ width: 8.33 }
+.col-2{ width: 16.66% }
+.col-3{ width: 25% }
+.col-4{ width: 33.33% }
+.col-5{ width: 41.65% }
+.col-6{ width: 50% }
+.col-7{ width: 58.33% }
+.col-8{ width: 66.66% }
+.col-9{ width: 75% }
+.col-10{ width: 83.33% }
+.col-11{ width: 91.66% }
+.col-12{ width: 100% }
 
-.column-33 {
+[class^="col-"]{
     float: left;
-    width: 33.33333%;
     padding: 20px;
 }
 
@@ -54,6 +69,11 @@ body {
     background-color: #4CAF50;
 }
 
+.button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
 img {
     display: block;
     height: auto;
@@ -63,7 +83,7 @@ img {
 .social-icon {
     font-size: 32px;
     padding: 5px;
-    color:#838383;
+    color: #838383;
 }
 
 .social-icon:hover {
@@ -72,7 +92,7 @@ img {
 }
 
 #toast {
-    visibility: hidden; 
+    visibility: hidden;
     min-width: 250px;
     background-color: #333;
     color: #fff;
@@ -84,22 +104,32 @@ img {
     left: 50%;
     transform: translateX(-50%);
     bottom: 30px;
-  }
-  
-  #toast.show {
-    visibility: visible; 
+}
+
+#toast.show {
+    visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  }
+}
+
+.more_text {
+    display: none;
+}
+
+footer{
+    width: 100%;
+    background-color:#f7f7f7;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color:dimgray;
+}
 
 @media screen and (max-width: 1000px) {
-
-    .column-66,
-    .column-33 {
+    [class^="col-"] {
         width: 100%;
         text-align: center;
     }
-
     img {
         margin: auto;
     }
@@ -109,18 +139,26 @@ img {
     .container {
         padding: 0;
     }
-
-    .column-66,
-    .column-33 {
+    [class^="col-"] {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-
     .notthatlarge-font {
         font-size: 6vw;
     }
-
     .large-font {
         font-size: 10vw;
+    }
+    .container .container-title{
+        text-align: center;
+        padding: 10px 10px 0 10px;
+    }
+    .container .container-img{
+        padding: 20px;
+        max-width: 100%;
+    }
+    .button{
+        margin: 5px;
+        width: 100%;
     }
 }

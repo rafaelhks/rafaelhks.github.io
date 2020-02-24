@@ -16,11 +16,11 @@ function readMoL(btnMore, dotsId, moreId) {
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btnMore.innerHTML = "Read more";
+        btnMore.innerHTML = "Ler mais";
         moreText.style.display = "none";
     } else {
         dots.style.display = "none";
-        btnMore.innerHTML = "Read less";
+        btnMore.innerHTML = "Ler menos";
         moreText.style.display = "inline";
     }
 }
