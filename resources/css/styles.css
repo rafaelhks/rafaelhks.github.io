@@ -15,6 +15,10 @@ a {
     padding: 64px;
 }
 
+.container-img{
+    margin: auto;
+}
+
 .container-darker{
     background-color:#f1f1f1
 }
@@ -199,8 +203,7 @@ footer a{
   
 .card a {
     text-decoration: none;
-    font-size: 22px;
-    color: black;
+    color: #196ff1;
 }
   
 .card button:hover, a:hover {
@@ -211,10 +214,11 @@ footer a{
     width: 100%;
     max-height: 200px;
     overflow: hidden;
-    -webkit-box-shadow: 0 10px 7px -7px #bbb3b3;
-    box-shadow: 0 10px 7px -7px #bbb3b3;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
+    border-bottom: 3px solid #196ff1;
+}
+
+.card .image img {
+    margin: auto;
 }
 
 @media screen and (max-width: 1000px) {

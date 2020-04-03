@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Spalette - Sua paleta de cores pessoal</title>
+    <link rel="stylesheet" href="resources/css/styles.css" />
+
+    <style>
+        .container-img{
+            max-height: 400px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-8">
+                        <h1 class="xlarge-font"><b>Spalette</b></h1>
+                        <h1 class="notthatlarge-font" style="color:#c70039;"><b>App Android/iOS para criação de paleta de cores personalizada</b></h1>
+                    </div>
+                    <div class="col-4">
+                        <img src="resources/img/spalette/spalette_icon.png" alt="logo" class="container-img">
+                    </div>
+                </div>
+                
+                <div class="content-text">
+                    <p>Este é um projeto criado com o intuito de aprimorar técnicas utilizando o Flutter, 
+                        bem como forncecer uma aplicação que ajude o usuário a gerenciar sua paleta de cores pessoal.</p>
+                    <p>O Spalette foi pensado para quem trabalha ou já trabalhou com design, seja com artes digitais ou até mesmo desenhando interfaces 
+                        e tem que lidar com diversas cores e, em muitos casos, utiliza-las novamente em outros projetos.
+                    </p>
+                    <p>
+                        Spalette é um projeto de código aberto com repositório no GitHub. Sinta-se à vontade para aprender e compartilhar melhorias e conhecimentos.
+                    </p>
+                </div>
+                <button class="button" style="background-color: #c70039;"
+                    onclick="window.open('https://github.com/rafaelhks/spalette/');">Repositório no GitHub</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="downloads">
+        <div class="row">
+            <div class="col-8">
+                <h1 class="notthatlarge-font" style="color:#900c3e;"><b>Crie cores personalizadas ou salve existentes</b></h1>
+                <div class="content-text">
+                    <p>O Spalette permite que o você crie uma cor utilizando uma combinação em ARGB (Alfa, Vermelho, Verde e Azul), 
+                        ajustando os valores pelos controles deslizantes da tela principal.
+                    </p>
+                    <p>
+                        Caso já saiba o código RGB ou Hexadecimal da cor, pode informá-lo nos campos no topo da tela. 
+                        Ao alterar qualquer um desses campos com um valor válido os controles e a cor são automáticamente ajustados.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="resources/img/spalette/spalette01.png" alt="Home image" width="335" height="471" class="container-img">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <img src="resources/img/spalette/spalette02.png" alt="Menu options" width="335" height="471" class="container-img">
+            </div>
+            <div class="col-3">
+                <img src="resources/img/spalette/spalette03.png" alt="Save Dialog" width="335" height="471" class="container-img">
+            </div>
+            <div class="col-6">
+                <h1 class="notthatlarge-font" style="color:#ff5733;"><b>Salve para depois</b></h1>
+                <div class="content-text">
+                    <p>
+                        Para salvar uma cor, basta acessar a opção "Salvar" do menu pelo botão flutuante no canto inferior direito da tela.
+                        Um exemplo da cor será apresentado e logo abaixo um campo onde é possível informar um nome para a nova cor.
+                    </p>
+                    <p>
+                        O menu conta ainda com as funcionalidades de <i>Reset</i>, voltando os valores para uma nova cor padrão,
+                         e Cor Aleatória, onde o app gera uma combinação de cor aleatória nova.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h1 class="notthatlarge-font" style="color:#ffc300;"><b>Sua paleta ao alcance de um toque</b></h1>
+                <div class="content-text">
+                    <p>
+                        As cores salvas vão para a sua paleta, acessível pela opção "Paleta de cores" do menu lateral.
+                        Nela as cores são dispostas em ordem de adição, permitindo também buscar cores pelo nome no campo de busca no topo da tela.
+                    </p>
+                    <p>
+                        Nesta tela é permitido buscar, visualizar, editar e remover cores. Caso queira remover uma cor, 
+                        basta tocar no "X" correspondente. Caso queira editar, basta tocar sobre o exemplo da cor 
+                        correspondente que é apresentado no canto esquerdo da tela.
+                    </p>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="resources/img/spalette/spalette04.png" alt="Menu lateral" width="335" height="471" class="container-img">
+            </div>
+            <div class="col-3">
+                <img src="resources/img/spalette/spalette05.png" alt="Paleta" width="335" height="471" class="container-img">
+            </div>
+        </div>
+    </div>
+    <footer>Copyright © 2020 <a href="https://rafaelhks.github.io/">Rafael Francisco Ferreira</a></footer>
+    <script src="resources/js/scripts.js"></script>
+</body>
+</html>
