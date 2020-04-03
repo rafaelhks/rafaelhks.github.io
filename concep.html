@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>ConCEP - Busca de CEP OnLine</title>
+    <link rel="stylesheet" href="resources/css/styles.css" />
+</head>
+
+<body>
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-4">
+                <img src="resources/img/concep/concep.png" alt="ConCEP image" width="335" height="471" class="container-img">
+            </div>
+            <div class="col-8">
+                <h1 class="xlarge-font"><b>ConCEP</b></h1>
+                <h1 class="notthatlarge-font" style="color:#00a2ff;"><b>Busque informações de um CEP de forma prática e rápida</b></h1>
+                <div class="content-text">
+                    <p>Em diversos casos precisamos checar ou obter informações sobre uma localização, como nomes de
+                        ruas, cidade, estado, logradouro, ou até mesmo o código do IBGE da cidade, usando um CEP.
+                        Visando aprender a utilizar a API <a href="https://viacep.com.br/">ViaCEP</a> e também a
+                        implementá-la numa aplicação, desenvolvi o ConCEP.
+                    </p>
+                    <p>
+                        Este <i>web-app</i> pode ser acessado via navegador por qualquer dispositivo e permite que você faça consultas por CEP, retornando as informações correspondentes (se
+                        houver) cadastradas na base de dados da ViaCEP.
+                    </p>
+                    <p>
+                        O ConCEP é um projeto de código aberto com repositório no GitHub e hospedado via GitHub Pages.
+                    </p>
+                </div>
+                <button class="button" style="background-color: #196ff1;"
+                    onclick="window.open('https://rafaelhks.github.io/concep_web/');">Visitar o ConCEP</button>
+                <button class="button" style="background-color: #196ff1;"
+                    onclick="window.open('https://github.com/rafaelhks/concep_web/');">Repositório no GitHub</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="downloads">
+        <div class="row">
+            <div class="col-8">
+                <h1 class="notthatlarge-font" style="color:#196ff1;"><b>Salve os resultados da pesquisa</b></h1>
+                <div class="content-text">
+                    <p>O ConCEP permite que o usuário salve os dados da pesquisa, quando encontrados, 
+                        no formato de texto (.txt) e no formato JSON (.json). Ambas as opções são 
+                        acessíveis no canto superior esquerdo do card de informações da pesquisa.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="resources/img/concep/concep_save_example.jpg" alt="Download file example image" width="335" height="471" class="container-img">
+            </div>
+        </div>
+    </div>
+    <footer>Copyright © 2020 <a href="https://rafaelhks.github.io/">Rafael Francisco Ferreira</a></footer>
+    <script src="resources/js/scripts.js"></script>
+</body>
+</html>

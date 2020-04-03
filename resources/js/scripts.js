@@ -46,3 +46,7 @@ function stickNavbar() {
     navbar.classList.remove("sticky");
   }
 } 
+
+function goBack() {
+  window.history.back();
+}

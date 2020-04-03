@@ -15,6 +15,10 @@ a {
     padding: 64px;
 }
 
+.container-darker{
+    background-color:#f1f1f1
+}
+
 .container .container-title{
     padding: 20px 0 0 20px;
     margin: 0;
@@ -125,6 +129,11 @@ footer{
     color:dimgray;
 }
 
+footer a{
+    color: #457baa;
+    text-decoration: none;
+}
+
 #navbar {
     overflow: hidden;
     background-color: #fff;
@@ -152,10 +161,60 @@ footer{
     width: 100%;
     box-shadow: 0 0px 4px -1px #555;
 }
-  
 
 .sticky + .container {
     padding-top: 60px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  
+.card .subtitle {
+    color: grey;
+    font-size: 18px;
+}
+
+.card .description{
+    padding: 5px;
+}
+  
+.card button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+  
+.card button:hover, a:hover {
+    opacity: 0.7;
+}
+
+.card .image{
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 10px 7px -7px #bbb3b3;
+    box-shadow: 0 10px 7px -7px #bbb3b3;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -193,5 +252,9 @@ footer{
     .button{
         margin: 5px;
         width: 100%;
+    }
+
+    .card .button{
+        margin: 0px;
     }
 }

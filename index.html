@@ -74,8 +74,8 @@
     <div class="container" id="career">
         <h1 class="container-title xlarge-font"><b>Carreira</b></h1>
         <div class="row">
-            <div class="col-8">
-                <h1 class="large-font" style="color:#19b6f1;"><b>RL Software</b></h1>
+            <div class="col-12">
+                <img src="resources/img/logo_rl.png" alt="RL Software logo" style="max-height: 100px; width: auto;">
                 <div class="content-text">
                     <p>Em fevereiro de 2019 comecei minha carreira como desenvolvedor Web e Mobile na RL Software.
                         Por dominar a linguagem Java, usada tanto nos sistemas Web (JSF/Spring) quanto nos Mobile
@@ -91,42 +91,28 @@
                         <p>Ainda em Janeiro de 2020,
                         me tornei o Gerente do desenvolvimento Web e Mobile, cargo que ocupo atualmente.</p>
                 </div>
-                <button class="button" style="background-color: #19b6f1;"
+                <button class="button" style="background-color: #00b0f2;"
                     onclick="window.open('http://www.rlsistemas.com.br/');">Saiba mais sobre a RL Software</button>
-            </div>
-            <div class="col-4">
             </div>
         </div>
     </div>
 
     <!-- Projetos -->
     <div class="container" style="background-color:#f1f1f1" id="projects">
-        <h1 class="container-title xlarge-font"><b>Projetos</b></h1>
+        <h1 class="container-title large-font"><b>Projetos de Código Aberto</b></h1>
+        <br>
         <div class="row">
             <div class="col-4">
-                <img src="resources/img/concep.png" alt="ConCEP image" width="335" height="471" class="container-img">
-            </div>
-            <div class="col-8">
-                <h1 class="large-font" style="color:#196ff1;"><b>ConCEP</b></h1>
-                <div class="content-text">
-                    <p>Em diversos casos precisamos checar ou obter informações sobre uma localização, como nomes de
-                        ruas, cidade, estado, logradouro, ou até mesmo o código do IBGE da cidade, usando um CEP.
-                        Visando aprender a utilizar a API <a href="https://viacep.com.br/">ViaCEP</a> e também a
-                        implementá-la numa aplicação, desenvolvi o ConCEP.
-                    </p>
-                    <p>
-                        Este <i>web-app</i> pode ser acessado via navegador por qualquer dispositivo e permite que você faça consultas por CEP, retornando as informações correspondentes (se
-                        houver) cadastradas na base de dados da ViaCEP. Além de visualizar, o app permite que o usuário salve os
-                        dados nos formatos <i>txt</i> e <i>JSON</i>.
-                    </p>
-                    <p>
-                        O ConCEP é um projeto de código aberto com repositório no GitHub e hospedado via GitHub Pages.
-                    </p>
+                <div class="card">
+                    <div class="image"><img src="resources/img/concep/concep.png" alt="John" style="width:100%"></div>
+                    <h1>ConCEP</h1>
+                    <p class="subtitle">Consulta de CEP</p>
+                    <p class="description">Web app simples para consultas de CEP via API da ViaCEP.</p>
+                    <p><button class="button" style="background-color: #196ff1;"
+                        onclick="window.open('concep.html');">Saiba mais</button>
+                    <button class="button" style="background-color: #255daf;"
+                        onclick="window.open('https://rafaelhks.github.io/concep_web/');">Visitar o ConCEP</button></p>
                 </div>
-                <button class="button" style="background-color: #196ff1;"
-                    onclick="window.open('https://rafaelhks.github.io/concep_web/');">Visitar o ConCEP</button>
-                <button class="button" style="background-color: #196ff1;"
-                    onclick="window.open('https://github.com/rafaelhks/concep_web/');">Repositório no GitHub</button>
             </div>
         </div>
     </div>
