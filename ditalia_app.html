@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>D'Italia App</title>
+    <link rel="stylesheet" href="resources/css/styles.css" />
+
+    <style>
+        .container-img{
+            max-height: 400px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-8">
+                        <h1 class="xlarge-font"><b>App Pizzaria D'Italia</b></h1>
+                        <h1 class="notthatlarge-font" style="color: #d91604;"><b>Aplicação multi-plataforma para realização de pedidos.</b></h1>
+                    </div>
+                    <div class="col-4">
+                        <img src="resources/img/ditalia/ditalia_logo.png" alt="logo" class="container-img">
+                    </div>
+                </div>
+                
+                <div class="content-text">
+                    <p>Este projeto foi criado com o intuito de facilitar a realização de pedidos pelos clientes 
+                        durante a pandemia do codiv-19 ocorrida em 2020.</p>
+                    <p>O projeto contou com o desenvolvimento de um aplicativo multi-plataforma (Flutter) e uma 
+                        api para controle dos dados (Node.js), bem como sua implatanação e manutenção.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-darker" id="app">
+        <div class="row">
+            <div class="col-6">
+                <h1 class="notthatlarge-font" style="color:#f38e1a;"><b>O aplicativo</b></h1>
+                <div class="content-text">
+                    <p>O aplicativo, desenvolvido em Flutter para as plataformas Android e iOS, permite ao usuário navegar pelo cardápio do estabelecimento, selecionando seus itens 
+                        e customizando de acordo com o tamanho, sabores e adicionais a gosto do cliente.
+                    </p>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="resources/img/ditalia/ditalia_app_login.jpg" alt="ditalia app login image" width="335" height="471" class="container-img">
+            </div>
+            <div class="col-3">
+                <img src="resources/img/ditalia/ditalia_app_cardapio.jpg" alt="ditalia app cardapio image" width="335" height="471" class="container-img">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h1 class="notthatlarge-font" style="color:#d91604;"><b>Sob medida</b></h1>
+                <div class="content-text">
+                    <p>O cliente pode acompanhar seus pedidos, cadastrar e alterar seus dados pessoais e endereços, 
+                        bem como informar se deseja apenas pedir pelo app e retirar no local.
+                    </p>
+                    <p>No app é informada a forma de pagamento e dados como quantia que irá pagar e o 
+                        troco e o pagamento é feito no ato da entrega.
+                    </p>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="resources/img/ditalia/ditalia_app_pesquisa.jpg" alt="ditalia app pesquisa image" width="335" height="471" class="container-img">
+            </div>
+            <div class="col-3">
+                <img src="resources/img/ditalia/ditalia_app_perfil.jpg" alt="ditalia app perfil image" width="335" height="471" class="container-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="api">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="notthatlarge-font" style="color:#f38e1a;"><b>A API</b></h1>
+                <div class="content-text">
+                    <p>A API do aplicativo, que foi desenvolvida em Node.js, realiza todo o processamento dos pedidos, 
+                        bem como realiza a listagem de todos os dados utilizados pelo app, como categorias, cardápio, pedidos, 
+                        formas de pagamento, mensagens e etc. A API também conta com funções de integração e auditoria de pedidos.
+                    </p>
+                    <p>A pedido do cliente, a API também controla as impressões dos pedidos nas impressoras 
+                        do estavbelecimento de forma automática. Assim que chega um pedido, cada setor fica sabendo dele por meio de sua impressora térmica.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>Copyright © 2020 <a href="https://rafaelhks.github.io/">Rafael Francisco Ferreira</a></footer>
+    <script src="resources/js/scripts.js"></script>
+</body>
+</html>
