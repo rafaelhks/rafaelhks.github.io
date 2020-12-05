@@ -208,6 +208,10 @@ img {
     margin: auto;
 }
 
+.card h1 {
+    font-size: 1.7em;
+}
+
 footer {
     padding: 10px;
     text-align: center;

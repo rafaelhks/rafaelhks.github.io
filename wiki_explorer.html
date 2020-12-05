@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Wikipedia Explorer App</title>
+    <link rel="stylesheet" href="resources/css/styles.css" />
+
+    <style>
+        .container-img{
+            max-height: 400px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-8">
+                        <h1 class="xlarge-font"><b>Wikipedia Explorer</b></h1>
+                        <h1 class="notthatlarge-font" style="color:#5e5e5e;"><b>App Android/iOS que permite navegar e favoritar seus artigos preferidos do Wikipedia.</b></h1>
+                    </div>
+                    <div class="col-4">
+                        <img src="resources/img/wiki_explorer/wikipedia_logo_v2_pt.png" alt="logo" class="container-img">
+                    </div>
+                </div>
+                
+                <div class="content-text">
+                    <p>Este é um projeto criado com o intuito de aprimorar técnicas utilizando o Flutter, 
+                        em especial o uso do componente WebView para acesso e manipulação de dados de páginas web.</p>
+                    <p>O projeto foi pensado para contar com processos de controle de navegação do usuário, 
+                        manipulação dos dados da página carregada e armazenamento dos artigos, utilizando o SQLite com o pacote sqflite.
+                    </p>
+                </div>
+                <button class="button" style="background-color: #5e5e5e;"
+                    onclick="window.open('https://github.com/rafaelhks/wiki_explorer/');">Repositório no GitHub</button>
+                <button class="button" style="background-color: #4d4d4d;"
+                    onclick="window.open('https://github.com/rafaelhks/wiki_explorer/tree/master/downloads/android');">Download APK</button>
+                    
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-darker" id="info1">
+        <div class="row">
+            <div class="col-6">
+                <h1 class="notthatlarge-font" style="color:#5e5e5e;"><b>Leitura descomplicada</b></h1>
+                <div class="content-text">
+                    <p>O Wikipedia Explorer permite ao usuário navegar por toda a Wikipedia, contando com controles de navegação próprios.
+                    </p>
+                    <p>
+                        Os artigos podem ser favoritados para que sejam acessados com facilidade, pela aba de Favoritos.
+                    </p>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="resources/img/wiki_explorer/wiki_explorer_home.png" alt="Home image" width="335" height="471" class="container-img">
+            </div>
+            <div class="col-3">
+                <img src="resources/img/wiki_explorer/wiki_explorer_favorite.png" alt="Favorite image" width="335" height="471" class="container-img">
+            </div>
+        </div>
+    </div>
+    <div class="container" id="info2">
+        <div class="row">
+            <div class="col-3">
+                <img src="resources/img/wiki_explorer/wiki_explorer_favorites.png" alt="Favorites image" width="335" height="471" class="container-img">
+            </div>
+            <div class="col-3">
+                <img src="resources/img/wiki_explorer/wiki_explorer_external.png" alt="External dialog image" width="335" height="471" class="container-img">
+            </div>
+            <div class="col-6">
+                <h1 class="notthatlarge-font" style="color:#5e5e5e;"><b>Salve para depois</b></h1>
+                <div class="content-text">
+                    <p>
+                        Para salvar os dados foi criado um banco de dados local, utilizando o SQLite com auxiliio do pacote sqflite.
+                    </p>
+                    <p>
+                        O usuário pode navegar por toda a Wikipedia, porém o app conta com um controle de navegação, 
+                        analisando sempre se o usuário está ou não acessando um sub-domínio da Wikipedia. 
+                        Caso tente acessar um link para um site externo, o mesmo será aberto no navegador.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>Copyright © 2020 <a href="https://rafaelhks.github.io/">Rafael Francisco Ferreira</a></footer>
+    <script src="resources/js/scripts.js"></script>
+</body>
+</html>
