@@ -218,6 +218,11 @@ footer {
     font-size: 12px;
 }
 
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width: 1000px) {
     [class^="col-"] {
         width: 100%;
